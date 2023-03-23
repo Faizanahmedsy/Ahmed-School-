@@ -1,0 +1,598 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+body{
+    font-family: 'Poppins', sans-serif;
+    /* background-image: url(images/bg.jpg); */
+}
+
+/* ---------------------------Main setup----------------- */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* -----------------------color setup------------------------------- */
+:root {
+    --primary: #2D3091;
+    --Secondary: #ED1A24;
+    --tertiary: #252525;
+}
+
+a{
+    text-decoration: none;
+}
+
+
+section{
+    margin: 100px 0px;
+}
+ 
+
+/* ---------------------Topp banner---------------------------------------------------------- */
+
+.small-bold-text{
+    font-size: 1rem;
+    font-weight: 700;
+}
+.top-banner{
+    background-color: var(--primary);
+}
+.banner-text{
+    color: #f5f5f5;
+    padding: 15px 30px;
+    text-align: center;
+}
+
+/* --------------------------------------Nav bar-------------------------------------------------- */
+/* navbar */
+/* .nav-link{
+        font-weight: 700;
+} */
+/* .nav-link:hover{
+    color: var(--primary);
+    text-decoration: dotted;
+} */
+
+.nav-link {
+  box-shadow: inset 0 0 0 0 var(--primary);
+  color: var(--primary);
+  margin: 0 -.25rem;
+  padding: 0 .25rem;
+  transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
+}
+.nav-link:hover {
+  box-shadow: inset 100px 0 0 0 var(--primary);
+  color: white;
+  /* text-decoration-style: wavy; */
+}
+
+
+/* .s1{
+    background-image: url(images/hero2.jpg);
+    /* background-color: #252525; */
+    /* height: 90vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 300px;
+    padding-bottom: 300px; */
+/* } */ 
+
+
+/* ----------------------------------------------------Hero ------------------------------- */
+
+.hero {
+    position: relative;
+    margin-top: 0px;
+}
+.hero-item {
+    height: 50rem;
+    background-color: #000;
+
+}
+.par-1 {
+    position: absolute;
+    bottom: 200px;
+    left: 0;
+    right: 0;
+    padding-bottom: 50px;
+    text-align: center;
+    color: azure;
+
+    font-family: 'Noto Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 65px;
+}
+.s1-image {
+    background-image: url(images/slide1img.jpg);
+    position: absolute;
+    background-position: center;
+    background-size: cover;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    opacity: 0.46;
+
+}
+.s2-image {
+    background-image: url(images/slide2img.jpg);
+    position: absolute;
+    background-position: center;
+    background-size: cover;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    opacity: 0.46;
+
+}
+.s3-image {
+    background-image: url(images/slide3img.jpg);
+    position: absolute;
+    background-position: center;
+    background-size: cover;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+
+}
+
+/* --------------------------------------------------------------About Us--------------------------------------------------- */
+.about-us{
+    position: relative;
+}
+
+/* --------------------------------------Our mission---------------------------------------------- */
+.our-mission{
+    position: relative;
+}
+
+
+
+.square {
+  height: 100px;
+  width: 100px;
+  background-color: white;
+}
+
+/* -------------------------------teachers---------------------------------------------------------------------- */
+.teachers{
+    position: relative;
+}
+
+
+.cardo {
+  width: 300px;
+  height: 380px;
+  padding: 0;
+  box-shadow: 0 2px 4px 0 rgba(0,0,0,0.1);
+  border-radius: 8px;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+.cardo * {
+  transition: 0.3s ease all;
+}
+
+.cardo img {
+  margin: 0;
+  width: 300px;
+  height: 324px;
+  object-fit: cover;
+  display: block;
+}
+
+.cardo h3 {
+  margin: 0;
+  padding: 12px 12px 48px;
+  line-height: 32px;
+  font-weight: 500;
+  font-size: 20px;
+}
+
+.cardo .focus-content {
+  display: block;
+  padding: 8px 12px;
+}
+
+.cardo p {
+  margin: 0;
+  line-height: 1.5;
+}
+
+.cardo:hover img, .card:focus-within img {
+  margin-top: -80px;
+}
+
+.cardo:hover h3, .card:focus-within h3 {
+  padding: 8px 12px 0;
+}
+
+/* --------------------------------------------------------------Extra Cirricular------------------------------------------------------------ */
+.container1 {
+  display: flex;
+  width: 70%;
+  padding: 4% 2%;
+  box-sizing: border-box;
+  height: 70%;
+}
+
+.box {
+  flex: 1;
+  overflow: hidden;
+  transition: .5s;
+  margin: 0 2%;
+  box-shadow: 0 20px 30px rgba(0,0,0,.1);
+  line-height: 0;
+}
+
+.box > img {
+  width: 200%;
+  height: calc(100% - 10vh);
+  object-fit: cover; 
+  transition: .5s;
+}
+
+.box > span {
+  font-size: 3.8vh;
+  display: block;
+  text-align: center;
+  height: 10vh;
+  line-height: 2.6;
+}
+
+.box:hover { flex: 1 1 50%; }
+.box:hover > img {
+  width: 100%;
+  height: 100%;
+}
+ 
+
+
+
+
+
+
+
+/* -----------------------------------------------Courses---------------------------------------------------------------- */
+
+/* .wrapper {
+    display: flex;
+    width: 90%;
+    justify-content: space-around;
+    margin-right: 200px;
+} */
+
+.card2 {
+    width: 280px;
+    height: 360px;
+    border-radius: 15px;
+    padding: 1.5rem;
+    background: white;
+    position: relative;
+    display: flex;
+    align-items: flex-end;
+    transition: 0.4s ease-out;
+    box-shadow: 0px 7px 10px rgba(0, 0, 0, 0.5);
+}
+
+.card2:hover {
+    transform: translateY(20px);
+}
+
+.card2:hover:before {
+    opacity: 1;
+}
+
+.card2:hover .info {
+    opacity: 1;
+    transform: translateY(0px);
+}
+
+.card2:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+    background: rgba(0, 0, 0, 0.6);
+    z-index: 2;
+    transition: 0.5s;
+    opacity: 0;
+}
+
+.card2 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 15px;
+}
+
+.card2 .info {
+    position: relative;
+    z-index: 3;
+    color: white;
+    opacity: 0;
+    transform: translateY(30px);
+    transition: 0.5s;
+}
+
+.card2 .info h1 {
+    margin: 0px;
+}
+
+.card2 .info p {
+    letter-spacing: 1px;
+    font-size: 15px;
+    margin-top: 8px;
+}
+
+.card2 .info button {
+    padding: 0.6rem;
+    outline: none;
+    border: none;
+    border-radius: 3px;
+    background: white;
+    color: black;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.4s ease;
+}
+
+.card2 .info button:hover {
+    background: dodgerblue;
+    color: white;
+}
+
+/* ----------------------Events------------------------------- */
+.column {
+	margin: 15px 10px 0;
+	padding: 0;
+}
+.column:last-child {
+	padding-bottom: 60px;
+}
+.column::after {
+	content: '';
+	clear: both;
+	display: block;
+}
+.column div {
+	position: relative;
+	float: left;
+	width: 300px;
+	height: 200px;
+	margin: 0 0 0 25px;
+	padding: 0;
+}
+.column div:first-child {
+	margin-left: 0;
+}
+.column div span {
+	position: absolute;
+	bottom: -20px;
+	left: 0;
+	z-index: -1;
+	display: block;
+	width: 300px;
+	margin: 0;
+	padding: 0;
+	color: #444;
+	font-size: 18px;
+	text-decoration: none;
+	text-align: center;
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+	opacity: 0;
+}
+figure {
+	width: 300px;
+	height: 200px;
+	margin: 0;
+	padding: 0;
+	background: #fff;
+	overflow: hidden;
+}
+figure:hover+span {
+	bottom: -36px;
+	opacity: 1;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Zoom In #1 */
+.hover01 figure img {
+	-webkit-transform: scale(1);
+	transform: scale(1);
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+}
+.hover01 figure:hover img {
+	-webkit-transform: scale(1.3);
+	transform: scale(1.3);
+}
+
+/* Zoom In #2 */
+.hover02 figure img {
+	width: 300px;
+	height: auto;
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ---------------------------------------------------------Testimonial----------------------------------------------------------------- */
+
+.testimonials {
+  margin-top: 80px;
+}
+
+.testimonials .testimonial-item {
+  box-sizing: content-box;
+  padding: 30px;
+  margin: 40px 30px;
+  background: var(--color-secondary);
+  min-height: 320px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  transition: 0.3s;
+}
+
+.testimonials .testimonial-item .stars {
+  margin-bottom: 15px;
+}
+
+.testimonials .testimonial-item .stars i {
+  color: #ffc107;
+  margin: 0 1px;
+}
+
+.testimonials .testimonial-item .testimonial-img {
+  width: 90px;
+  border-radius: 50%;
+  border: 5px solid #474a4d;
+  margin: 0 auto;
+}
+
+.testimonials .testimonial-item h3 {
+  font-size: 18px;
+  font-weight: bold;
+  margin: 10px 0 5px 0;
+  color: #fff;
+}
+
+.testimonials .testimonial-item h4 {
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.5);
+  margin: 0;
+}
+
+.testimonials .testimonial-item p {
+  font-style: italic;
+  margin: 0 auto 15px auto;
+}
+
+.testimonials .swiper-pagination {
+  margin-top: 20px;
+  position: relative;
+}
+
+.testimonials .swiper-pagination .swiper-pagination-bullet {
+  width: 12px;
+  height: 12px;
+  background-color: rgba(255, 255, 255, 0.2);
+  opacity: 1;
+}
+
+.testimonials .swiper-pagination .swiper-pagination-bullet-active {
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+.testimonials .swiper-slide {
+  opacity: 0.3;
+}
+
+@media (max-width: 1199px) {
+  .testimonials .swiper-slide-active {
+    opacity: 1;
+  }
+
+  .testimonials .swiper-pagination {
+    margin-top: 0;
+  }
+
+  .testimonials .testimonial-item {
+    margin: 40px 20px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .testimonials .swiper-slide-next {
+    opacity: 1;
+    transform: scale(1.12);
+  }
+}
+
+
+
+/* <!-- =====================================Call to action------------------------------------ --> */
+
+.cta{
+    position: relative;
+}
+
+
+.cta-row{
+    background-color: pink;
+}
+
+
+
+
+
+/* footer  */
+.footer{
+    position: relative;
+    margin-bottom: 0px;
+    background-color: var(--primary);
+    color: white;
+    padding-top: 30px;
+}
+
+.btn{
+    position: relative;
+}
+.sub-footer{
+    background-color: var(--primary);
+}
+.fab{
+    padding: 20px;
+}
